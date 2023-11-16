@@ -1,0 +1,45 @@
+:root {
+  --color-primary:rgb(121, 170, 105);
+  --color-primary-dark:rgb(53, 108, 35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px;
+
+  padding: 10px 20px;
+  margin: 10px 20px;
+  color: var(--color-primary);
+  border: 1px dashed;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+  color: #fff;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 2px;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  /* background-color: var(--color-primary-dark); */
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark));
+}
+
+.btn-clicked {
+  background: linear-gradient(to bottom , red, green)
+}
